@@ -1,0 +1,13 @@
+<svg width="220" height="72" viewBox="0 0 220 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="36" cy="36" r="29" fill="#101722" stroke="#0EA5E9" stroke-width="5"/>
+  <path d="M19 35C19 25.6 26.6 18 36 18C45.4 18 53 25.6 53 35C53 38.3 52.1 41.4 50.4 44L55 52L45.9 49.4C43.1 51.1 39.7 52 36 52C26.6 52 19 44.4 19 35Z" stroke="#FF8A12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 13L27 39H37L31 59L50 29H39L47 13H39Z" fill="url(#boltGradient)"/>
+  <text x="78" y="39" fill="#0EA5E9" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="2">NEXOS</text>
+  <text x="79" y="57" fill="#E5E7EB" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400">Conectamos los puntos de la actualidad</text>
+  <defs>
+    <linearGradient id="boltGradient" x1="34" y1="13" x2="43" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+</svg>
