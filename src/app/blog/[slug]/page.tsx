@@ -7,8 +7,9 @@ export function generateStaticParams() {
   return blogData.map((story) => ({ slug: story.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const story = blogData.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const story = blogData.find((item) => item.slug === slug);
 
   if (!story) {
     return {
@@ -22,8 +23,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-const StoryDetailPage = ({ params }: { params: { slug: string } }) => {
-  const story = blogData.find((item) => item.slug === params.slug);
+const StoryDetailPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const story = blogData.find((item) => item.slug === slug);
 
   if (!story) {
     notFound();
